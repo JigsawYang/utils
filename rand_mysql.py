@@ -8,7 +8,7 @@ def randstr_to_mysql(times = 10):
     ranstr = (''.join(random.sample('zyxwvutsrqponmlkjihgfedcba', 20)));
     rancrc = zlib.crc32(ranstr.encode())
 
-    conn = pymysql.connect('localhost', 'root', '2103189', 'h_perfor')
+    conn = pymysql.connect('localhost', 'xxx', 'xxx', 'h_perfor')
     cur = conn.cursor()
     num = 0
     while num < times:
